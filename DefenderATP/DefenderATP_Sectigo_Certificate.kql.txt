@@ -1,7 +1,8 @@
-// Description: Hunting for Sectigo Certificates (after 2020-11-01 in query below) 
+// Description: Hunting for Sectigo Certificates (adjust CertificateCreationTime to your needs) 
+// Description2: Hash1 is based on observed Quakbot samples 
 // Author: Markus Neis, Swisscom 
 // Hash1: 148a731c526267d9dad3c578fdc69643843f778fce255df979b3374e66b5930b
 
 DeviceFileCertificateInfo 
 | where Signer contains "Sectigo" or Issuer contains "Sectigo"
-| where CertificateCreationTime >= datetime(2020-11-01T00:00:00Z) 
+| where CertificateCreationTime >= ago(1d) 
