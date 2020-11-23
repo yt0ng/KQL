@@ -1,5 +1,5 @@
-// Description: Hunting for Sectigo Certificates (after 2020-11-01 in query below)
-// Author: Swisscom CSIRT 
+// Description: Hunting for Sectigo Certificates (after 2020-11-01 in query below) 
+// Author: Markus Neis, Swisscom 
 // Hash1: 148a731c526267d9dad3c578fdc69643843f778fce255df979b3374e66b5930b
 
 DeviceFileCertificateInfo 
